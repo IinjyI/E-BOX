@@ -42,16 +42,9 @@ class Welcome extends StatelessWidget {
               },
               child: const Text(
                 "Skip",
-                style: TextStyle(color: Colors.blueGrey, fontSize: 20),
+                style: TextStyle(color: Colors.blueGrey, fontSize: 25),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Image.asset('assets/logo.png'),
-          ),
-          const SizedBox(
-            height: 50,
           ),
           const Text(
             "Ebooks",
@@ -59,6 +52,17 @@ class Welcome extends StatelessWidget {
                 color: Color(0xFF12346a),
                 fontSize: 40,
                 fontWeight: FontWeight.bold),
+          ),
+          Text(
+            "Connecting bookworms together",
+            style: TextStyle(color: Colors.grey, fontSize: 20),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20),
+            child: Image.asset('assets/1.jpg'),
+          ),
+          const SizedBox(
+            height: 50,
           ),
           const SizedBox(
             height: 50,

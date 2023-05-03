@@ -42,7 +42,7 @@ Future searchEmail(String email) {
       .then((value) => value.docs.length);
 }
 
-/// store history item in firebase
+/// store book in firebase
 Future storeBook(String username, Map<String, dynamic> info, String userIndx,
     booksIndx) async {
   _fireStore
@@ -54,7 +54,7 @@ Future storeBook(String username, Map<String, dynamic> info, String userIndx,
   _fireStore.collection('books').doc(booksIndx).set(info);
 }
 
-/// get history in firestore
+/// get user books from firestore
 Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> getUserBooks(
     String? username) {
   return _fireStore
@@ -66,7 +66,6 @@ Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> getUserBooks(
       .then((value) => value.docs);
 }
 
-/// get history length
 Future<int> getUserBooksLen(String? username) async {
   return await _fireStore
       .collection('users')

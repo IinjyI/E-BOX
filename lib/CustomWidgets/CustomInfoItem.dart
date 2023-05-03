@@ -13,7 +13,6 @@ class CustomInfoItem extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
         child: ListTile(
           dense: false,
-          onTap: () {},
           leading: Icon(
             icon,
             color: const Color(0xff2952ce),

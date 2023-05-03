@@ -1,3 +1,6 @@
+import 'package:ebooks/CustomWidgets/CustomInfoItem.dart';
+import 'package:ebooks/CustomWidgets/CustomTextField.dart';
+import 'package:ebooks/Screens/UserScreen.dart';
 import 'package:flutter/material.dart';
 
 class BooksItemScreen extends StatelessWidget {
@@ -22,22 +25,28 @@ class BooksItemScreen extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30),
           ),
           const SizedBox(height: 10),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                'author: $author',
-                style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
-              ),
-              Text(
-                'genre: $genre',
-                style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
-              ),
-            ],
+          CustomInfoItem(
+            label: 'author: $author',
+            icon: Icons.person,
           ),
-          Text(
-            'uploaded by: $user',
-            style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
+          const SizedBox(height: 10),
+          CustomInfoItem(
+              label: 'genre: $genre', icon: Icons.question_mark_sharp),
+          const SizedBox(height: 20),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => UserScreen(
+                    user: user,
+                  ),
+                ),
+              );
+            },
+            child: CustomInfoItem(
+                label: 'uploaded by:  $user',
+                icon: Icons.account_circle_rounded),
           ),
         ]),
       ),

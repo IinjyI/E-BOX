@@ -1,4 +1,5 @@
 import 'package:ebooks/CustomWidgets/CustomButton.dart';
+import 'package:ebooks/CustomWidgets/CustomSnackBar.dart';
 import 'package:ebooks/CustomWidgets/CustomTextField.dart';
 import 'package:ebooks/Functions/DBandAuth/mapAndStore.dart';
 import 'package:ebooks/Functions/DBandAuth/sharedPrefs.dart';
@@ -62,8 +63,11 @@ class AddNewBook extends StatelessWidget {
                 ),
                 CustomButton(
                     text: 'Add book',
-                    function: () =>
-                        mapAndStore(_bookName, _author, _genre, loggedInUser)),
+                    function: () {
+                      mapAndStore(_bookName.text, _author.text, _genre.text,
+                          loggedInUser);
+                      buildSnackBar(context, 'book added successfully');
+                    }),
                 const SizedBox(height: 10),
               ],
             ),

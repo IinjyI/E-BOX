@@ -51,7 +51,7 @@ class Signin extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(30),
-                        child: Image.asset('assets/doctors.png'),
+                        child: Image.asset('assets/1.jpg'),
                       ),
                       Form(
                         key: _formKey,

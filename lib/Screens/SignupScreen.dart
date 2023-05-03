@@ -29,7 +29,7 @@ class Signup extends StatelessWidget {
   final TextEditingController _email = TextEditingController();
   final TextEditingController _password = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
+  final TextEditingController _phone = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +53,7 @@ class Signup extends StatelessWidget {
                       ),
                       Padding(
                           padding: const EdgeInsets.all(30),
-                          child: Image.asset('assets/doctors.png')),
+                          child: Image.asset('assets/1.jpg')),
                       Form(
                         key: _formKey,
                         child: Column(
@@ -76,6 +76,12 @@ class Signup extends StatelessWidget {
                               icon: Icons.email,
                               labelText: 'Email',
                             ),
+                            CustomTextField(
+                                icon: Icons.phone,
+                                labelText: 'phone number',
+                                validator:
+                                    RequiredValidator(errorText: 'Required'),
+                                controller: _phone),
                             CustomTextField(
                               controller: _password,
                               validator: MultiValidator([
@@ -124,6 +130,7 @@ class Signup extends StatelessWidget {
                                 Map<String, dynamic> userInfo = {
                                   'email': _email.text,
                                   'username': _userName.text,
+                                  'phone': _phone.text
                                 };
 
                                 ///store data in FireStore

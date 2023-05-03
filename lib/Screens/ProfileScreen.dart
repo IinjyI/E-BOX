@@ -52,6 +52,9 @@ class Profile extends StatelessWidget {
                           CustomInfoItem(
                             icon: Icons.email,
                             label: snapshot.data!.data()!['email'],
+                          ), CustomInfoItem(
+                            icon: Icons.email,
+                            label: snapshot.data!.data()!['phone'],
                           ),
                           CustomButton(
                               text: 'Sign Out',

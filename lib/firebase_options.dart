@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAAKNuxoWvokjgo110DwlsaHcUxOIR1uHI',
-    appId: '1:31357043846:web:706421c6a92ac5c7eebd07',
-    messagingSenderId: '31357043846',
-    projectId: 'ebooks-2023',
-    authDomain: 'ebooks-2023.firebaseapp.com',
-    storageBucket: 'ebooks-2023.appspot.com',
+    apiKey: 'AIzaSyAFONxx8cWSWvO_mKMlJmhmd9QwgBk7YLE',
+    appId: '1:1026699769533:web:d32699794d8229b34b69d4',
+    messagingSenderId: '1026699769533',
+    projectId: 'ebooks--2023',
+    authDomain: 'ebooks--2023.firebaseapp.com',
+    storageBucket: 'ebooks--2023.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBkK-paD8aN8yOH_v1geAGEe9oSD8hnOIE',
-    appId: '1:31357043846:android:bb9e644f9c57a28eeebd07',
-    messagingSenderId: '31357043846',
-    projectId: 'ebooks-2023',
-    storageBucket: 'ebooks-2023.appspot.com',
+    apiKey: 'AIzaSyAwRn4i86-zBUlhGW-gD8YRhVcnXcvpFCY',
+    appId: '1:1026699769533:android:3a43def14b15a5614b69d4',
+    messagingSenderId: '1026699769533',
+    projectId: 'ebooks--2023',
+    storageBucket: 'ebooks--2023.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAAT12aLnT361EG1qHfsF9KjrbSE0TuJEw',
-    appId: '1:31357043846:ios:e45ba8bf5c860e34eebd07',
-    messagingSenderId: '31357043846',
-    projectId: 'ebooks-2023',
-    storageBucket: 'ebooks-2023.appspot.com',
-    iosClientId: '31357043846-9kpr2e96g2ja6tjisofnnnuo9h13d17h.apps.googleusercontent.com',
+    apiKey: 'AIzaSyC2pNCYHQ8Jrwm0JwOTznsWD8fytZpGuak',
+    appId: '1:1026699769533:ios:a9ed7f6af1832d194b69d4',
+    messagingSenderId: '1026699769533',
+    projectId: 'ebooks--2023',
+    storageBucket: 'ebooks--2023.appspot.com',
+    iosClientId: '1026699769533-6h5qk3k88p32an0dm2si8vq5stc22v2d.apps.googleusercontent.com',
     iosBundleId: 'com.ebooks.ebooks',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAAT12aLnT361EG1qHfsF9KjrbSE0TuJEw',
-    appId: '1:31357043846:ios:e45ba8bf5c860e34eebd07',
-    messagingSenderId: '31357043846',
-    projectId: 'ebooks-2023',
-    storageBucket: 'ebooks-2023.appspot.com',
-    iosClientId: '31357043846-9kpr2e96g2ja6tjisofnnnuo9h13d17h.apps.googleusercontent.com',
+    apiKey: 'AIzaSyC2pNCYHQ8Jrwm0JwOTznsWD8fytZpGuak',
+    appId: '1:1026699769533:ios:a9ed7f6af1832d194b69d4',
+    messagingSenderId: '1026699769533',
+    projectId: 'ebooks--2023',
+    storageBucket: 'ebooks--2023.appspot.com',
+    iosClientId: '1026699769533-6h5qk3k88p32an0dm2si8vq5stc22v2d.apps.googleusercontent.com',
     iosBundleId: 'com.ebooks.ebooks',
   );
 }
